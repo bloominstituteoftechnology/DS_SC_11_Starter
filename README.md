@@ -12,3 +12,11 @@ Build a Flask-powered web application that displays air quality data from the Op
 # Install dependencies
 ```
 
+### 2. Get API Key
+
+
+### 3. Download Required Files
+
+
+### 4. Start Coding
+
