@@ -20,3 +20,14 @@ Build a Flask-powered web application that displays air quality data from the Op
 
 ### 4. Start Coding
 
+
+## Project Structure
+
+```bash
+your-project/
+├── aq_dashboard.py         # Your completed solution
+├── requirements.txt        # Dependencies
+```
+
+## Key Features to Implement
+
