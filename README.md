@@ -14,12 +14,15 @@ Build a Flask-powered web application that displays air quality data from the Op
 
 ### 2. Get API Key
 
+ <!-- get api key from openaq -->
 
 ### 3. Download Required Files
 
+<!-- download openaq.py from the course materials -->
 
 ### 4. Start Coding
 
+<!-- use starter code -->
 
 ## Project Structure
 
