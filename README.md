@@ -29,7 +29,10 @@ Build a Flask-powered web application that displays air quality data from the Op
 ```bash
 your-project/
 ├── aq_dashboard.py         # Your completed solution
+├── openaq.py               # OpenAQ API wrapper (download from course)
+├── test_aq_dashboard.py    # Test file
 ├── requirements.txt        # Dependencies
+└── db.sqlite3              # SQLite database (created automatically)
 ```
 
 ## Key Features to Implement
