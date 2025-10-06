@@ -37,3 +37,23 @@ your-project/
 
 ## Key Features to Implement
 
+### Part 1: Flask Setup
+
+<!-- outline flask setup -->
+
+### Part 2: OpenAQ API v3 Integration
+
+<!-- outline api v3 integration -->
+
+### Part 3: Database Integration
+
+<!-- add database integration -->
+
+### Part 4: Dashboard Filtering
+
+<!-- add dashboard filtering -->
+
+## API v3 Changes (January 2025)
+
+<!-- outline api v3 changes -->
+
