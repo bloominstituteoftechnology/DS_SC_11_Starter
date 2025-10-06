@@ -10,6 +10,10 @@ Build a Flask-powered web application that displays air quality data from the Op
 
 ```bash
 # Install dependencies
+pip install flask flask-sqlalchemy requests py-openaq pytest
+
+# Or use pipenv
+pipenv install flask flask-sqlalchemy requests py-openaq pytest
 ```
 
 ### 2. Get API Key
