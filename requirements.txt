@@ -1,1 +1,5 @@
-# requirements.txt - Dependencies
+requests
+Flask
+flask-sqlalchemy
+py-openaq
+pytest
