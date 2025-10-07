@@ -18,15 +18,20 @@ pipenv install flask flask-sqlalchemy requests py-openaq pytest
 
 ### 2. Get API Key
 
- <!-- get api key from openaq -->
+1. Visit [OpenAQ API Key page](https://docs.openaq.org/using-the-api/api-key)
+2. Sign up for a free account
+3. Generate an API key
 
 ### 3. Download Required Files
 
-<!-- download openaq.py from the course materials -->
+- Download `openaq.py` from the course materials
+- Place it in your project directory
 
 ### 4. Start Coding
 
-<!-- use starter code -->
+- Use `starter.py` as your starting point
+- Follow the step-by-step instructions in the assignment
+- Complete all TODO items
 
 ## Project Structure
 
