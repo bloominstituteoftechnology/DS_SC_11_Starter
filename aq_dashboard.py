@@ -19,3 +19,9 @@ from openaq import OpenAQ
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
 DB = SQLAlchemy(app)
+
+# Initialize OpenAQ API with your key
+# TODO: Replace 'your_api_key_here' with your actual OpenAQ API key
+api = OpenAQ(key='your_api_key_here')
+
+
