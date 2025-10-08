@@ -80,3 +80,7 @@ class API:
             pass
 
         return resp.status_code, res
+
+    def _get(self, url, **kwargs):
+        return self._send(url, 'GET', **kwargs)
+
