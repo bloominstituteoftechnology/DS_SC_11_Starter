@@ -66,3 +66,39 @@ your-project/
 
 <!-- outline api v3 changes -->
 
+## Testing
+
+```bash
+# Run tests
+python -m pytest test_aq_dashboard.py -v
+
+# Expected output: 4 tests passing
+```
+
+## Running the Application
+
+```bash
+# Python execution
+```
+
+<!-- visit localhost:5000 to see your dashboard -->
+
+## Troubleshooting
+
+### Common Issues
+
+<!-- add common issues -->
+
+### Debug Tips
+
+<!-- add debug tips -->
+
+## Success Criteria
+
+<!-- add success criteria -->
+
+## Stretch Goals (Optional)
+
+<!-- add stretch goals -->
+
+Good luck! 🚀
