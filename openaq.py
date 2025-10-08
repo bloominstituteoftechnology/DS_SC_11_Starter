@@ -23,3 +23,25 @@ class API:
         # Add API key to headers if provided
         if self._key:
             self._headers['X-API-Key'] = self._key
+
+    def _make_url(self, endpoint, **kwargs):
+        """Internal method to create a url from an endpoint.
+        :param endpoint: Endpoint for an API call
+        :type endpoint: string
+        :returns: url
+        """
+        endpoint = "{}/{}/{}".format(self._baseurl, self._version, endpoint)
+
+        extra = []
+        for key, value in kwargs.items():
+            if isinstance(value, list) or isinstance(value, tuple):
+                # value = ','.join(value)
+                for v in value:
+                    extra.append("{}={}".format(key, v))
+            else:
+                extra.append("{}={}".format(key, value))
+
+        if len(extra) > 0:
+            endpoint = '?'.join([endpoint, '&'.join(extra)])
+
+        return endpoint
