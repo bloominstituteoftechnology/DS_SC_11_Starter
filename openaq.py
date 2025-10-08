@@ -84,3 +84,22 @@ class API:
     def _get(self, url, **kwargs):
         return self._send(url, 'GET', **kwargs)
 
+
+class OpenAQ(API):
+    """Create an instance of the OpenAQ API
+
+    """
+
+    def __init__(self, version='v3', **kwargs):
+        """Initialize the OpenAQ instance.
+
+        :param version: API version.
+        :param kwargs: API options.
+
+        :type version: string
+        :type kwargs: dictionary
+
+        """
+        self._baseurl = 'https://api.openaq.org'
+
+        super(OpenAQ, self).__init__(version=version, baseurl=self._baseurl, **kwargs)
