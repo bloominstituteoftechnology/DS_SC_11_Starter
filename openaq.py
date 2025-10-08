@@ -103,3 +103,47 @@ class OpenAQ(API):
         self._baseurl = 'https://api.openaq.org'
 
         super(OpenAQ, self).__init__(version=version, baseurl=self._baseurl, **kwargs)
+
+    def cities(self, **kwargs):
+        """Returns a listing of cities within the platform.
+
+        :param country: limit results by a certain country
+        :param limit: limit results in the query. Default is 100. Max is 10000.
+        :param page: paginate through the results. Default is 1.
+        :param order_by: order by one or more fields (ex. order_by=['country', 'locations']). Default value is 'country'
+        :param sort: define the sort order for one or more fields (ex. sort='desc')
+
+        :return: dictionary containing the *city*, *country*, *count*, and number of *locations*
+
+        :type country: 2-digit ISO code
+        :type limit: number
+        :type order_by: string or list of strings
+        :type sort: string
+        :type page: number
+        :type country: string or array of strings
+        :type df: bool
+        :type index: string
+
+        :Example:
+
+        >>> import openaq
+        >>> api = openaq.OpenAQ()
+        >>> status, resp = api.cities()
+        >>> resp['results']
+        [
+            {
+                "city": "Amsterdam",
+                "country": "NL",
+                "count": 21301,
+                "locations": 14
+            },
+            {
+                "city": "Badhoevedorp",
+                "country": "NL",
+                "count": 2326,
+                "locations": 1
+            },
+            ...
+        ]
+        """
+        return self._get('cities', **kwargs)
