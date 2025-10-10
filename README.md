@@ -127,6 +127,10 @@ Visit `http://localhost:5000` to see your dashboard!
 
 ## Stretch Goals (Optional)
 
-<!-- add stretch goals -->
+- Add HTML templates for better UI
+- Implement data visualization
+- Add location-specific filtering
+- Deploy to Heroku
+- Add data science analysis (averages, trends)
 
 Good luck! 🚀
