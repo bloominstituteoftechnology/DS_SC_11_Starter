@@ -9,10 +9,15 @@ Build a Flask-powered web application that displays air quality data from the Op
 ### 1. Setup Environment
 
 ```bash
-# Install dependencies
-pip install flask flask-sqlalchemy requests py-openaq pytest
+# create a virtual environment
+python -m venv venv
 
-# Or use pipenv
+# activate the virtual environment
+source venv/bin/activate
+
+# Option A: Install dependencies
+pip install flask flask-sqlalchemy requests py-openaq pytest
+# Option B: Use pipenv
 pipenv install flask flask-sqlalchemy requests py-openaq pytest
 ```
 
