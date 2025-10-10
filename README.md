@@ -27,14 +27,9 @@ pip install flask flask-sqlalchemy requests py-openaq pytest
 2. Sign up for a free account
 3. Generate an API key
 
-### 3. Download Required Files
+### 3. Start Coding
 
-- Download `openaq.py` from the course materials
-- Place it in your project directory
-
-### 4. Start Coding
-
-- Use `starter.py` as your starting point
+- Use `aq_dashboard.py` as your starting point
 - Follow the step-by-step instructions in the assignment
 - Complete all TODO items
 
