@@ -91,10 +91,14 @@ python -m pytest test_aq_dashboard.py -v
 ## Running the Application
 
 ```bash
-# Python execution
+# Method 1: Direct Python execution
+python aq_dashboard.py
+
+# Method 2: Flask CLI
+FLASK_APP=aq_dashboard.py flask run
 ```
 
-<!-- visit localhost:5000 to see your dashboard -->
+Visit `http://localhost:5000` to see your dashboard!
 
 ## Troubleshooting
 
