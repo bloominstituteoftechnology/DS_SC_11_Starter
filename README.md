@@ -130,7 +130,7 @@ Visit `http://localhost:5000` to see your dashboard!
 - Add HTML templates for better UI
 - Implement data visualization
 - Add location-specific filtering
-- Deploy to Heroku
+- Deploy to Render.com
 - Add data science analysis (averages, trends)
 
 Good luck! 🚀
