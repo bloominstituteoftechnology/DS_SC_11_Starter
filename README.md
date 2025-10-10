@@ -48,23 +48,36 @@ your-project/
 
 ### Part 1: Flask Setup
 
-<!-- outline flask setup -->
+- Basic Flask application
+- Database configuration
+- API initialization
 
 ### Part 2: OpenAQ API v3 Integration
 
-<!-- outline api v3 integration -->
+- Three-step data retrieval process:
+  1. Get locations: `api.locations()`
+  2. Get sensors: `api.sensors_by_location_id(location_id)`
+  3. Get measurements: `api.measurements_by_sensor_id(sensor_id)`
+- Handle API rate limits and data availability
+- Implement fallback sample data
 
 ### Part 3: Database Integration
 
-<!-- add database integration -->
+- Create `Record` model with id, datetime, value fields
+- Implement `/refresh` route to pull and store data
+- Add proper `__repr__` method
 
 ### Part 4: Dashboard Filtering
 
-<!-- add dashboard filtering -->
+- Filter records with `value >= 18` (potentially risky PM2.5 levels)
+- Display filtered results on main page
 
 ## API v3 Changes (January 2025)
 
-<!-- outline api v3 changes -->
+- **API Key Required**: Authentication via `X-API-Key` header
+- **No Direct Measurements**: Must use locations → sensors → measurements flow
+- **Rate Limiting**: Stricter limits, 429 errors common
+- **Data Availability**: Many sensors lack recent measurements
 
 ## Testing
 
