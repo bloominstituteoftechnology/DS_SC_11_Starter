@@ -4,11 +4,10 @@ This is a starter template for the Air Quality Dashboard Sprint Challenge.
 Complete the TODO items to build a fully functional dashboard.
 
 Setup Instructions:
-1. Install dependencies: pip install flask flask-sqlalchemy requests py-openaq pytest
+1. Install dependencies: pip install -r requirements.txt
 2. Get a free API key from https://docs.openaq.org/using-the-api/api-key
-3. Replace 'your_api_key_here' with your actual API key
-4. Download the openaq.py file and place it in your project directory
-5. Run the application: python starter.py
+3. Replace 'your_api_key_here' with your actual API key in an .env file
+4. Run the application: (see README instructions)
 """
 
 from flask import Flask
