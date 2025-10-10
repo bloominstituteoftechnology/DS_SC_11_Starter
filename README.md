@@ -104,15 +104,26 @@ Visit `http://localhost:5000` to see your dashboard!
 
 ### Common Issues
 
-<!-- add common issues -->
+1. **ModuleNotFoundError**: Install missing dependencies
+2. **API Key Errors**: Ensure you have a valid OpenAQ API key
+3. **Rate Limiting**: API v3 has strict limits - use fallback data
+4. **No Data**: Many sensors don't have recent measurements
 
 ### Debug Tips
 
-<!-- add debug tips -->
+- Enable Flask debug mode: `app.run(debug=True)`
+- Check API responses with print statements
+- Use sample data when API is unavailable
+- Test database operations in Flask shell
 
 ## Success Criteria
 
-<!-- add success criteria -->
+- [ ] Flask app runs without errors
+- [ ] API key authentication works
+- [ ] Database stores air quality data
+- [ ] Dashboard filters for risky PM2.5 levels (≥18 μg/m³)
+- [ ] All tests pass
+- [ ] Handles API rate limits gracefully
 
 ## Stretch Goals (Optional)
 
