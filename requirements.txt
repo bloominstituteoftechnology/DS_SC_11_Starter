@@ -3,3 +3,4 @@ Flask
 flask-sqlalchemy
 py-openaq
 pytest
+python-dotenv

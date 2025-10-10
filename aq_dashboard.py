@@ -14,15 +14,18 @@ Setup Instructions:
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from openaq import OpenAQ
+from dotenv import load_dotenv
+import os
 
 # Initialize Flask app
+load_dotenv()
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
 DB = SQLAlchemy(app)
 
 # Initialize OpenAQ API with your key
-# TODO: Replace 'your_api_key_here' with your actual OpenAQ API key
-api = OpenAQ(key='your_api_key_here')
+# TODO: Replace 'your_api_key_here' in the .env file with your actual OpenAQ API key
+api = OpenAQ(key=os.getenv('OPEN_AQ_API_KEY'))
 
 
 class Record(DB.Model):

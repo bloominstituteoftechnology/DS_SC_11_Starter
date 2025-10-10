@@ -18,7 +18,7 @@ source venv/bin/activate
 venv/Scripts/activate
 
 # Install dependencies
-pip install flask flask-sqlalchemy requests py-openaq pytest
+pip install -r requirements.txt
 ```
 
 ### 2. Get API Key
@@ -26,6 +26,11 @@ pip install flask flask-sqlalchemy requests py-openaq pytest
 1. Visit [OpenAQ API Key page](https://docs.openaq.org/using-the-api/api-key)
 2. Sign up for a free account
 3. Generate an API key
+4. Create a `.env` file in the root directory and add the API key:
+
+```bash
+OPEN_AQ_API_KEY=your_api_key_here
+```
 
 ### 3. Start Coding
 
